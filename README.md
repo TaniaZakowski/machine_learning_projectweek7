@@ -44,7 +44,7 @@ The following steps were taken to achieve the project goals:
 - Fine-tuning model using techniques like Grid Search and Cross-Validation.
 
 4. Evaluation:
-- Evaluated model performance using appropriate metrics such as accuracy, precision, recall, F1-score, and AUC-ROC.
+- Evaluated model performance using appropriate metrics such as accuracy, precision, recall, and F1-score.
 - Performed cross-validation and hyperparameter tuning to optimize models.
   
 5. Interpretation:
