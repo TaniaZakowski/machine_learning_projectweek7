@@ -1,52 +1,72 @@
-# Student Dropout Prediction from Higher Education 
+# 🎓 Predicting Student Success Using Machine Learning
+
+## Project Overview:
+
+This project aims to predict student academic success based on various features using machine learning models. By forecasting the likelihood of a student's successful graduation (Pass/Fail), we can help educational institutions identify at-risk students early and provide them with targeted support. 🎯
+
+## 🏆 Objectives:
+
+- Improve decision-making for educators.
+- Identify at-risk students and provide timely interventions.
+- Enhance student well-being by increasing graduation rates and lowering dropout rates.
+
+## 📊 Data Overview:
+- Dataset: The dataset includes academic performance data from 4,424 students, such as grades, attendance, and demographic information.
+- Data Cleaning: Removed outliers and handled missing values, resulting in a clean dataset of 4,338 rows.
+- Target Variable: Pass/Fail classification for predicting student success.
 
 
-## Project Overview
+## 🔧 Methodology:
 
-This project aims to tackle the issue of student dropout in higher education by using machine learning techniques to identify students at risk of not completing their studies. By analyzing factors such as academic performance, demographics, and socio-economic background, this model can help institutions take early action to support at-risk students. By identifying these students early in their academic journey, the ultimate goal is to reduce dropout rates and increase the success rate of students completing their higher education programs.
+1. Data Processing
+- Replaced or removed missing values.
+- Identified and removed outliers.
+- Feature engineering was applied to create new features like Average Grades and Pass Rates.
+
+2. Exploratory Data Analysis (EDA)
+- Correlation matrix calculated between features and the target variable (Pass/Fail).
+- Selected 16 relevant features based on a correlation threshold of 0.1.
+
+3. Model Building
+- We developed and compared three machine learning models to predict student success:
+
+- K-Nearest Neighbors (KNN)
+  - Best parameters: n_neighbors=9, metric=manhattan, weights=distance.
+  - Accuracy: 81.34%
+- Random Forest
+  - Outperformed KNN.
+  - Accuracy: 83.64%
+    
+- Gradient Boosting
+  - Achieved the highest accuracy.
+  - Accuracy: 84.10%
+    
+⚙️ Hyperparameter Tuning: Grid Search was employed to optimize the hyperparameters of KNN and Random Forest models.
 
 
-## Dataset
-The dataset used in this project was collected as part of a research initiative aimed at reducing academic dropout and failure in higher education. It includes information known at the time of student enrollment, including:
+## 📈 Results:
 
-- Academic Path: Information about the student's academic performance and progression.
-- Demographics: Age, gender, nationality, and other personal details.
-- Socio-economic Factors: Information related to the student's economic background.
-
-The dataset's primary focus is to predict the students' academic status at the end of their program's normal duration. The classification task includes three categories:
-
-- Dropout: Students who left the program before completion.
-- Enrolled: Students who are still enrolled in the program.
-- Graduate: Students who successfully completed the program.
+Best Model: Gradient Boosting with an accuracy of 84.10%.
+Comparison Metrics: We used accuracy and F1 score to evaluate and compare the models.
 
 
-## Project Goals
-The primary goals of this project are:
+## 🌍 Real-World Impact:
 
-- Build Classification Models: Develop machine learning models to predict the likelihood of student dropout, ongoing enrollment, or graduation.
-- Identify Key Influencing Factors: Analyze the factors that contribute most to student dropout.
-- Improve Academic Success Rates: Provide actionable insights to help educational institutions implement strategies that can reduce dropout rates and increase student success.
+By predicting student success, this project can:
 
+- Reduce dropout rates and increase graduation rates.
+- Improve resource efficiency for educational institutions.
+- Offer targeted support to students who need it most.
 
-## Methodology
-The following steps were taken to achieve the project goals:
+## 🔮 Future Work:
 
-1. Data Preprocessing:
-- Cleaned and transformed the dataset to handle missing values, inconsistencies, and data types.
-- Addressed class imbalance using synthetic oversampling techniques.
+- Incorporate post-enrollment and behavioral data.
+- Experiment with advanced model architectures.
+- Implement a real-time early warning system to provide predictions in real time.
   
-2. Feature Engineering:
-- Selected relevant features that influence student dropout, enrollment, and graduation.
-- Explored relationships between various academic, demographic, and socio-economic factors.
+## 🛠️ Team Members:
 
-3. Model Development and Initial Tuning
-- Developed  your Machine Learning model.
-- Fine-tuning model using techniques like Grid Search and Cross-Validation.
+Nicole, Mehdi, Tania, Houleye
 
-4. Evaluation:
-- Evaluated model performance using appropriate metrics such as accuracy, precision, recall, and F1-score.
-- Performed cross-validation and hyperparameter tuning to optimize models.
-  
-5. Interpretation:
-- Analyzed the importance of different features to understand which factors most influence student outcomes.
-- Provided insights and recommendations for educational institutions to support at-risk students.
+Feel free to reach out if you have any questions! 😊
+
